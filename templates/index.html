@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Application Architecture Diagram Generator</title>
+</head>
+<body>
+<h1>Web Application Architecture Diagram Generator</h1>
+
+<form action="/" method="POST">
+<label for="app_name">Application Name:</label>
+<input type="text" name="app_name" id="app_name">
+
+<label for="app_type">Application Type:</label>
+<select name="app_type" id="app_type">
+<option value="windows">Windows</option>
+<option value="android">Android</option>
+<option value="ios">iOS</option>
+<option value="macos">macOS</option>
+<option value="web">Web Application</option>
+<option value="custom">Custom</option>
+</select>
+
+<label for="components">Components:</label>
+<input type="checkbox" name="components" id="components" value="frontend"> Frontend
+<input type="checkbox" name="components" id="components" value="backend"> Backend
+<input type="checkbox" name="components" id="components" value="database"> Database
+<input type="checkbox" name="components" id="components" value="api"> API
+
+<input type="submit" value="Generate Diagram">
+</form>
+
+<div id="diagram"></div>
+</body>
+</html>
+
+
